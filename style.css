@@ -101,7 +101,7 @@ body {
 }
 
 .top_info_green {
-    background-color: rgb(33, 102, 62);
+    background-color: #7AA874;
     border: 2px solid black;
     border-radius: 12px;
     margin-bottom: 4px; padding: 2px 10px;
@@ -109,7 +109,7 @@ body {
 }
 
 .top_info_yellow {
-    background-color: rgb(138, 77, 9);
+    background-color: #EBB02D;
     border: 2px solid black;
     border-radius: 12px;
     margin-bottom: 4px; padding: 2px 10px;
@@ -117,12 +117,13 @@ body {
 }
 
 .top_info_red {
-    background-color: rgb(184, 26, 26);
+    background-color: #FF6D60;
     border: 2px solid black;
     border-radius: 12px;
     margin-top: 4px; padding: 2px 10px;
     display: inline-flex; vertical-align: middle;
     width: 300px;
+    justify-content: center;
 }
 
 .img_card {
