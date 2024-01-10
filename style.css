@@ -235,7 +235,7 @@ body {
     }
     .main {
         float: none;
-        display: block;
+        flex-direction: column;
         text-align: left;
         overflow: visible;
     }
