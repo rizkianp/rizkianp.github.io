@@ -59,6 +59,17 @@ body {
     opacity: 1;
 }
 
+.wa_button .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
 #link_wa {
     text-decoration: none;
     color: white;
@@ -277,6 +288,27 @@ body {
     .footer {
         display: block;
         text-align: left;
+    }
+
+    .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        padding: 5px 5px;
+        border-radius: 12px;
+        font-size: small;
+    
+        /* Position the tooltip text */
+        position: absolute;
+        z-index: 1;
+        top: 110px;
+        margin: 0 auto;
+    
+        /* Fade in tooltip */
+        opacity: 0;
+        transition: opacity 0.3s;
     }
 
 }
