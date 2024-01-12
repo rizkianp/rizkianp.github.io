@@ -1,4 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Kanit);
+@font-face {
+    font-family: brighter;
+    src: url(fonts/Brighter\ Regular.otf);
+}
 
 body {
     margin: 0;
