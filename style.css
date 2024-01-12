@@ -17,7 +17,7 @@ body {
 .header {
     overflow: hidden;
     display: flex; justify-content: space-between;
-    background-color: #183775;
+    background-color: #1F4172;
     padding: 10px 10px;
     height: fit-content;
 }
@@ -132,7 +132,7 @@ body {
 }
 
 .card:hover {
-    background-color: rgb(170, 217, 187, 1);
+    background-color: rgb(255, 255, 255);
     border: 2px solid rgb(0, 0, 0);
     animation-name: poke;
     animation-duration: 0.25s;
@@ -243,14 +243,15 @@ body {
   /* FOOTER */
   .footer {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     bottom: 0;
-    margin-top: auto;
+    margin: auto;
     width: 100%;
-    background-color: #151d0c;
+    background-color: #161A30;
     color: white;
     font-family: "Kanit";
     font-size: larger; color: white;
+    align-items: center;
   }
 
   a {
