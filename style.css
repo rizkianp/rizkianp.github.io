@@ -293,8 +293,7 @@ body {
         overflow: visible;
     }
     .footer {
-        display: block;
-        text-align: left;
+        margin: auto;
     }
 
     .tooltiptext {
