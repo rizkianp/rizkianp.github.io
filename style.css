@@ -93,12 +93,16 @@ body {
     padding: 12px 15px;
     border-radius: 12px;
     font-size: 18px;
+    animation-name: zoom;
+    animation-duration: 0.2s;
 }
 
 #btntop:hover {
     background-color: #3ecdcf;
+    animation-name: poke;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
 }
-
 
 
 /* Tooltip container */
@@ -241,6 +245,11 @@ body {
   @keyframes zoom {
     from {transform:scale(0)}
     to {transform:scale(1)}
+  }
+
+  @keyframes zoomout {
+    from {transform:scale(1)}
+    to {transform:scale(0)}
   }
   
   /* The Close Button */
