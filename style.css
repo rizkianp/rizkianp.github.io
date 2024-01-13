@@ -80,6 +80,27 @@ body {
     color: white;
 }
 
+/* Scroll to top */
+#btntop {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 99;
+    border: none; outline: none;
+    color: white;
+    background-color: #2D9596;
+    cursor: pointer;
+    padding: 12px 15px;
+    border-radius: 12px;
+    font-size: 18px;
+}
+
+#btntop:hover {
+    background-color: #3ecdcf;
+}
+
+
+
 /* Tooltip container */
 .tooltiptext {
     visibility: hidden;
