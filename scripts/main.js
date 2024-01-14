@@ -32,5 +32,9 @@ function scrollFunction() {
 //when button clicked, scroll to top
 function goToTop() {
   document.body.scrollTop = 0; //For Safari
-  document.documentElement.scrollTop = 0; // For chrome, ie, firefox, opera
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  })
 }
