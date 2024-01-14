@@ -93,8 +93,6 @@ body {
     padding: 12px 15px;
     border-radius: 12px;
     font-size: 18px;
-    animation-name: zoom;
-    animation-duration: 0.2s;
 }
 
 #btntop:hover {

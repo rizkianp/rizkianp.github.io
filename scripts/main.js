@@ -8,15 +8,6 @@ function onClick(element) {
 
 // scroll to top button:
 let topButton = document.getElementById("btntop")
-//zoomout animation:
-const zoomOUt = [
-  {transform: "scale(1)"},
-  {transform: "scale(0)"},
-];
-
-const zoomOutTiming = {
-  duration: 200, iterations: 1
-};
 
 // when scroll down 30px from top show the button
 window.onscroll = function() {scrollFunction()};
