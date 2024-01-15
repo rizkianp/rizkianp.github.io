@@ -6,8 +6,15 @@ function onClick(element) {
   document.getElementById("caption").innerHTML = element.alt;
 }
 
+// logo image
+let logo = document.getElementById("logo_header")
+
 // scroll to top button:
 let topButton = document.getElementById("btntop")
+
+// sticky header variable
+let header = document.getElementById("myheader")
+let sticky = header.offsetTop;
 
 // Define fade-in and fade-out animations
 const fadeIn = [
@@ -43,7 +50,19 @@ function scrollFunction() {
       topButton.style.display = "none";
     };
   }
-}
+
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+    logo.src ="images/logo_dh_mini.png";
+    logo.style = "max-width:30px";
+  }
+    else {
+      header.classList.remove("sticky");
+      logo.src ="images/logo_dh.png";
+    }
+  
+  }
+
 
 //when button clicked, scroll to top
 function goToTop() {

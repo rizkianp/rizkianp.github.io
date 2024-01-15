@@ -22,6 +22,14 @@ body {
     height: fit-content;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  justify-content: flex-start;
+}
+
 .header-left {
     float: left;
 }
@@ -41,6 +49,11 @@ body {
 #logo_header {
     width: 233.8px;
     height: 52.5px;
+}
+
+#logo_header_mini {
+    max-width: 30px;
+    max-height: 30px;
 }
 
 .wa_button {
