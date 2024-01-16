@@ -8,6 +8,10 @@ function onClick(element) {
 
 // logo image
 let logo = document.getElementById("logo_header")
+// center text
+let logo_text = document.getElementById("logo_text")
+// logo button
+let logo_button = document.getElementById("logo_button")
 
 // scroll to top button:
 let topButton = document.getElementById("btntop")
@@ -53,12 +57,19 @@ function scrollFunction() {
 
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
+    logo_button.classList.replace('wa_button', 'wa_button_none')
     logo.src ="images/logo_dh_mini.png";
-    logo.style = "max-width:30px";
+    logo.style.maxWidth ='30px';
+    logo.style.maxHeight = '30px';
+    logo_text.style.fontSize = '18px';
   }
     else {
       header.classList.remove("sticky");
+      logo_button.classList.replace('wa_button_none', 'wa_button')
       logo.src ="images/logo_dh.png";
+      logo.style.maxWidth ='233.8px';
+      logo.style.maxHeight = '52.5px';
+      logo_text.style.fontSize = '28px';
     }
   
   }
