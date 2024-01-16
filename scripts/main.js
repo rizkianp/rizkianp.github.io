@@ -62,6 +62,7 @@ function scrollFunction() {
     logo.style.maxWidth ='30px';
     logo.style.maxHeight = '30px';
     logo_text.style.fontSize = '18px';
+    logo_text.style.position = 'relative';
   }
     else {
       header.classList.remove("sticky");
@@ -70,6 +71,7 @@ function scrollFunction() {
       logo.style.maxWidth ='233.8px';
       logo.style.maxHeight = '52.5px';
       logo_text.style.fontSize = '28px';
+      logo_text.style.position = 'relative';
     }
   
   }
