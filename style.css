@@ -59,7 +59,7 @@ body {
 
 .wa_button {
     border: none;
-    background-color: #2FA64D;
+    background-color: #25D366;
     cursor: pointer;
     font-family: "Kanit";
     font-size: large; color: white;
@@ -125,6 +125,29 @@ body {
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
 }
+
+/* WA Scroll button */
+#btnwa {
+    position:fixed;
+    bottom: 100px;
+    right: 30px;
+    z-index: 99;
+    border: none; outline: none;
+    color: white;
+    background-color:  #25D366;
+    cursor: pointer;
+    padding: 12px 15px;
+    border-radius: 12px;
+    font-size: 18px;
+}
+
+#btnwa:hover {
+    background-color: #46fc89;
+    animation-name: poke;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
 
 
 /* Tooltip container */

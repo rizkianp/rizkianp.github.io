@@ -15,6 +15,8 @@ let logo_button = document.getElementById("logo_button")
 
 // scroll to top button:
 let topButton = document.getElementById("btntop")
+// wa scroll button:
+let waButton = document.getElementById("btnwa")
 
 // sticky header variable
 let header = document.getElementById("myheader")
@@ -52,6 +54,17 @@ function scrollFunction() {
     // Button becomes not visible, play fade-out animation
     topButton.animate(fadeOut, fadeTiming).onfinish = function () {
       topButton.style.display = "none";
+    };
+  }
+
+  if (scrollTop > 30 && waButton.style.display !== "block") {
+    // Button becomes visible, play fade-in animation
+    waButton.style.display = "block";
+    waButton.animate(fadeIn, fadeTiming);
+  } else if (scrollTop <= 30 && waButton.style.display !== "none") {
+    // Button becomes not visible, play fade-out animation
+    waButton.animate(fadeOut, fadeTiming).onfinish = function () {
+      waButton.style.display = "none";
     };
   }
 
