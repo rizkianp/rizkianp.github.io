@@ -1,0 +1,292 @@
+@font-face {
+    font-family: brighter;
+    src: url(assets/fonts/Brighter\ Regular.otf);
+}
+
+@font-face {
+    font-family: carattere;
+    src: url(assets/fonts/Carattere-Regular.ttf);
+}
+
+
+html {
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    top: 0;
+}
+
+#video_bg {
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+}
+
+#hero_nav {
+    position: absolute;
+    right: 0;
+    color: white;
+    z-index: 99;
+}
+
+#izin {
+    max-width: 180px;
+    max-height: 20px;
+}
+
+#hero_content {
+    position: absolute;
+    bottom: 30%;
+    text-align: center;
+    width: 100%;
+    color:white;
+}
+
+.hero_button {
+    border: 2px solid white;
+    padding: 4px;
+    width: 160px; height: 60px;
+    background-color: transparent;
+    color: white;
+    font-size: 28px;
+    margin: 10px;
+}
+
+.hero_button:hover {
+    cursor: pointer;
+    background-color: white;
+    mix-blend-mode: screen;
+    color: black;
+}
+
+.card_img {
+    border: solid transparent;
+    border-radius: 12px;
+}
+
+.umrah {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    background-image: url("assets/img/bg-umrah0.webp");
+    background-size: cover;
+    background-position: left center;
+}
+
+.umrah_tx {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.umrah_card_container {
+    display: flex;
+    overflow: auto;
+    flex-wrap: nowrap;
+    cursor: pointer;
+    overflow-x: hidden;
+    transition: all 0.2s;
+    transform: scale(0.98);
+    will-change: transform;
+}
+
+.umrah_card {
+    display: flex;
+    flex-direction: column;
+    max-width: 25vw;
+    background-color: rgba(0,0,0,0.35);
+    margin: 10px;
+    border: solid transparent;
+    border-radius: 12px;
+}
+
+.prev, .next {
+    z-index: 2;
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    top: 50%;
+    margin: 4px;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@keyframes poke {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-5px);}
+}
+
+.umrah_card:hover {
+    background-color: rgb(255, 255, 255);
+    animation-name: poke;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+.umrah_card_container.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    transform: scale(1);
+}
+
+.umrah_card_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_top {
+    flex-wrap: wrap;
+    border: solid transparent;
+    border-radius: 12px;
+    display: inline-flex; vertical-align: middle;
+    margin-bottom: 4px; padding: 2px 10px;
+}
+
+.left {
+    background-color: #5F8670;
+}
+
+.right {
+    background-color: #575e8a;
+}
+
+.down {
+    margin-bottom: 0px;
+    margin-top: 4px; padding: 2px 10px;
+    justify-content: center;
+    background-color: #CE7777;
+}
+
+.done {
+    filter: grayscale(1)
+}
+
+/* MODAL UNTUK KARTU UMRAH KETIKA DIKLIK */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left:0; top:0;
+    width: 100%; height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.75);
+}
+
+.modal_content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    animation-name: zoom;
+    animation-duration: 0.3s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+
+.umrah_quote {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 20px; margin-bottom: 20px;
+    max-width: 30vw;
+    text-align: right;
+    font-family: 'carattere', 'arial';
+    font-size: 1.5rem;
+    opacity: 0.5;
+}
+
+.hajj {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    background-image: url("assets/img/bg-hajj0.webp");
+    background-size: cover;
+    background-position: left center;
+}
+
+.hajj_content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.visa {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #213555;
+    position: relative;
+    background-image: url("assets/img/bg-visa0.webp");
+    background-size: cover;
+    background-position: left center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    background-color: #161A30;
+    color: white;
+    align-items: center;
+}

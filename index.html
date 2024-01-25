@@ -3,118 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Darul Haromain Umrah & Hajj</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Darul Haromain</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header" id="myheader">
-        <div class="header-left">
-            <img src="images/logo_dh.png" alt="logo darul haromain" id="logo_header">
+    <div class="nav"></div>
+    <div class="hero">
+        <video autoplay muted loop id="video_bg">
+            <source src="assets/vid/vidbg-00.mp4" type="video/mp4">
+        </video>
+        <div style="position:absolute; background-color: rgba(0,0,0,0.5); width: 100%; height:100vh"></div>
+        <div id="hero_nav">
+            <p id="izin"><i class="fa-solid fa-circle-check"></i>&nbsp;Izin Umrah Resmi Kemenag no. 1022/2019</p>
         </div>
-        <div class="header-center">
-            <i id ="logo_text" style="font-family: 'brighter', 'Kanit', 'Arial'; font-size: 28px;">Teman Setia Menuju Baitullah</i>
-        </div>
-        <div class="header-right">
-            <button id ="logo_button" class="wa_button"><a id="link_wa" href="https://wa.me/6283890397772?text=Assalamualaikum%20Saya%20tertarik%20untuk%20berangkat%20umrah%20bersama%20Darul%20Haromain" target="_blank"><i class="fa fa-whatsapp" style="font-size:24px;color: white;"></i> 0838 9039 777 2</a><span class="tooltiptext">Chat via Whatsapp</span></button>
-        </div>
-    </div>
-    <div class="main">
-        <div class ="card">
-            <div class="card_top_info">
-                <div class="top_info_green"><i style="margin: auto;" class="fa-solid fa-calendar-days"></i>&nbsp;15 JAN 2024</div>
-                <div class="top_info_yellow"><i style="margin: auto;" class="fa-solid fa-hourglass-half"></i>&nbsp;12 Hari</div>
-            </div>
-            <img class="img_card" src="images/umr-00.jpeg" alt="paket 15 Jan" onclick="onClick(this)">
-            <div class="card_top_info">
-                <div class="top_info_red">Seat Tersedia:&nbsp<i style="margin: 4px 2px;" class="fa-solid fa-person"></i>&nbsp;0 PAX</div>
-            </div>
-        </div>
-        <div class ="card">
-            <div class="card_top_info">
-                <div class="top_info_green"><i style="margin: auto;" class="fa-solid fa-calendar-days"></i>&nbsp;28 JAN 2024</div>
-                <div class="top_info_yellow"><i style="margin: auto;" class="fa-solid fa-hourglass-half"></i>&nbsp;10 Hari</div>
-            </div>
-            <img class="img_card" src="images/umr-00a.jpeg" alt="paket 28 Jan" onclick="onClick(this)">
-            <div class="card_top_info">
-                <div class="top_info_red">Seat Tersedia:&nbsp<i style="margin: 4px 2px;" class="fa-solid fa-person"></i>&nbsp;1 Dari 40 PAX</div>
-            </div>
-        </div>
-        <div class ="card">
-            <div class="card_top_info">
-                <div class="top_info_green"><i style="margin: auto;" class="fa-solid fa-calendar-days"></i>&nbsp;17 FEB 2024</div>
-                <div class="top_info_yellow"><i style="margin: auto;" class="fa-solid fa-hourglass-half"></i>&nbsp;13 Hari</div>
-            </div>
-            <img class="img_card" src="images/umr-01.jpeg" alt="Paket Umrah Syahdu" onclick="onClick(this)">
-            <div class="card_top_info">
-                <div class="top_info_red">Seat Tersedia:&nbsp<i style="margin: 4px 2px;" class="fa-solid fa-person"></i>&nbsp;7 Dari 40 PAX</div>
-            </div>
-        </div>
-        <div class ="card">
-            <div class="card_top_info">
-                <div class="top_info_green"><i style="margin: auto;" class="fa-solid fa-calendar-days"></i>&nbsp;6 MAR 2024</div>
-                <div class="top_info_yellow"><i style="margin: auto;" class="fa-solid fa-hourglass-half"></i>&nbsp;12 Hari</div>
-            </div>
-            <img class="img_card" src="images/umr-01a.jpeg" alt="paket awal ramadhan" onclick="onClick(this)">
-            <div class="card_top_info">
-                <div class="top_info_red">Seat Tersedia:&nbsp<i style="margin: 4px 2px;" class="fa-solid fa-person"></i>&nbsp;30 Dari 45 PAX</div>
-            </div>
-        </div>
-        <div class ="card">
-            <div class="card_top_info">
-                <div class="top_info_green"><i style="margin: auto;" class="fa-solid fa-calendar-days"></i>&nbsp;6 MAR 2024</div>
-                <div class="top_info_yellow"><i style="margin: auto;" class="fa-solid fa-hourglass-half"></i>&nbsp;13 Hari</div>
-            </div>
-            <img class="img_card" src="images/umr-01b.jpg" alt="paket awal ramadhan LOMBOK" onclick="onClick(this)">
-            <div class="card_top_info">
-                <div class="top_info_red">Seat Tersedia:&nbsp<i style="margin: 4px 2px;" class="fa-solid fa-person"></i>&nbsp;15 Dari 45 PAX</div>
-            </div>
-        </div>
-        <div class ="card">
-            <div class="card_top_info">
-                <div class="top_info_green"><i style="margin: auto;" class="fa-solid fa-calendar-days"></i>&nbsp;10 MAR 2024</div>
-                <div class="top_info_yellow"><i style="margin: auto;" class="fa-solid fa-hourglass-half"></i>&nbsp;12 Hari</div>
-            </div>
-            <img class="img_card" src="images/umr-01aa.jpeg" alt="paket Umroh awal ramadhan jilid 2" onclick="onClick(this)">
-            <div class="card_top_info">
-                <div class="top_info_red">Seat Tersedia:&nbsp<i style="margin: 4px 2px;" class="fa-solid fa-person"></i>&nbsp;35 Dari 35 PAX</div>
-            </div>
-        </div>
-        <div class ="card">
-            <div class="card_top_info">
-                <div class="top_info_green"><i style="margin: auto;" class="fa-solid fa-calendar-days"></i>&nbsp;26 MAR 2024</div>
-                <div class="top_info_yellow"><i style="margin: auto;" class="fa-solid fa-hourglass-half"></i>&nbsp;17 Hari</div>
-            </div>
-            <img class="img_card" src="images/umr-02.jpeg" alt="paket Itikaf" onclick="onClick(this)">
-            <div class="card_top_info">
-                <div class="top_info_red">Seat Tersedia:&nbsp<i style="margin: 4px 2px;" class="fa-solid fa-person"></i>&nbsp;35 Dari 40 PAX</div>
-            </div>
-        </div>
-        <div class ="card">
-            <div class="card_top_info">
-                <div class="top_info_green"><i style="margin: auto;" class="fa-solid fa-calendar-days"></i>&nbsp;15 APR 2024</div>
-                <div class="top_info_yellow"><i style="margin: auto;" class="fa-solid fa-hourglass-half"></i>&nbsp;9 Hari</div>
-            </div>
-            <img class="img_card" src="images/umr-03.jpeg" alt="Paket Syawal" onclick="onClick(this)">
-            <div class="card_top_info">
-                <div class="top_info_red">Seat Tersedia:&nbsp<i style="margin: 4px 2px;" class="fa-solid fa-person"></i>&nbsp;34 Dari 40 PAX</div>
-            </div>
-        </div>
-        <div class ="card">
-            <div class="card_top_info">
-                <div class="top_info_green"><i style="margin: auto;" class="fa-solid fa-calendar-days"></i>&nbsp;15 APR 2024</div>
-                <div class="top_info_yellow"><i style="margin: auto;" class="fa-solid fa-hourglass-half"></i>&nbsp;9 Hari</div>
-            </div>
-            <img class="img_card" src="images/umr-04.jpeg" alt="Paket Syawal" onclick="onClick(this)">
-            <div class="card_top_info">
-                <div class="top_info_red">Seat Tersedia:&nbsp<i style="margin: 4px 2px;" class="fa-solid fa-person"></i>&nbsp;- PAX</div>
-            </div>
+        <div id="hero_content">
+            <img style="max-width: 300px;" src="assets/img/logo_dh.png">
+            <h2 style="font-size: 52px; font-family: 'brighter', 'arial';">Teman setia menuju Baitullah</h2>
+            <button class="hero_button" onclick="goToSection(1)"><i class="fa-solid fa-mosque"></i>&nbsp;Umrah</button>
+            <button class="hero_button" onclick="goToSection(2)"><i class="fa-solid fa-kaaba"></i>&nbsp;Haji</button>
+            <button class="hero_button" onclick="goToSection(3)"><i class="fa-solid fa-passport"></i>&nbsp;Visa</button>
         </div>
         
-    </div>   
-
-     <!-- FOOTER -->
+    </div>
+    <div id="1" class="umrah">
+        <div class="umrah_tx"><p>Bergabunglah bersama&nbsp;<span id="jamaah"></span>&nbsp;jamaah yang telah berangkat bersama kami.</p></div>
+        <a class="prev" onclick="">&#10094;</a>
+        <a class="next" onclick="">&#10095;</a>
+        <div class="umrah_card_container">
+            <div class="umrah_card done">
+                <div class="umrah_card_top">
+                    <div class="card_top left"><i style="margin: auto;" class="fa-solid fa-calendar-days"></i>&nbsp;15 JAN 2024</div>
+                    <div class="card_top right"><i style="margin: auto;" class="fa-solid fa-hourglass-half"></i>&nbsp;12 HARI</div>
+                </div>
+                <img class="card_img done" src="assets/img/umr-00.jpeg" onclick="onClick(this)">
+                <div class="card_top down">Seat Tersedia:&nbsp;<i style="margin: 4px 2px;" class="fa-solid fa-person"></i>&nbsp;0 Dari 40 PAX
+                </div>
+            </div>
+            <div class="umrah_card">
+                <div class="umrah_card_top">
+                    <div class="card_top left"><i style="margin: auto;" class="fa-solid fa-calendar-days"></i>&nbsp;28 JAN 2024</div>
+                    <div class="card_top right"><i style="margin: auto;" class="fa-solid fa-hourglass-half"></i>&nbsp;10 HARI</div>
+                </div>
+                <img class="card_img"  src="assets/img/umr-00a.jpeg" onclick="onClick(this)">
+                <div class="card_top down">Seat Tersedia:&nbsp;<i style="margin: 4px 2px;" class="fa-solid fa-person"></i>&nbsp;0 Dari 40 PAX
+                </div>
+            </div>
+            <div class="umrah_card">
+                <div class="umrah_card_top">
+                    <div class="card_top left"><i style="margin: auto;" class="fa-solid fa-calendar-days"></i>&nbsp;17 FEB 2024</div>
+                    <div class="card_top right"><i style="margin: auto;" class="fa-solid fa-hourglass-half"></i>&nbsp;13 HARI</div>
+                </div>
+                <img class="card_img" src="assets/img/umr-01.jpeg" onclick="onClick(this)">
+                <div class="card_top down">Seat Tersedia:&nbsp;<i style="margin: 4px 2px;" class="fa-solid fa-person"></i>&nbsp;7 Dari 40 PAX
+                </div>
+            </div>
+            <div class="umrah_card">
+                <div class="umrah_card_top">
+                    <div class="card_top left"><i style="margin: auto;" class="fa-solid fa-calendar-days"></i>&nbsp;6 MAR 2024</div>
+                    <div class="card_top right"><i style="margin: auto;" class="fa-solid fa-hourglass-half"></i>&nbsp;12 HARI</div>
+                </div>
+                <img class="card_img" src="assets/img/umr-01a.jpeg" onclick="onClick(this)">
+                <div class="card_top down">Seat Tersedia:&nbsp;<i style="margin: 4px 2px;" class="fa-solid fa-person"></i>&nbsp;30 Dari 45 PAX
+                </div>
+            </div>
+            <div class="umrah_card">
+                <div class="umrah_card_top">
+                    <div class="card_top left"><i style="margin: auto;" class="fa-solid fa-calendar-days"></i>&nbsp;6 MAR 2024</div>
+                    <div class="card_top right"><i style="margin: auto;" class="fa-solid fa-hourglass-half"></i>&nbsp;13 HARI</div>
+                </div>
+                <img class="card_img" src="assets/img/umr-01b.jpg" onclick="onClick(this)">
+                <div class="card_top down">Seat Tersedia:&nbsp;<i style="margin: 4px 2px;" class="fa-solid fa-person"></i>&nbsp;15 Dari 45 PAX
+                </div>
+            </div>
+            <div class="umrah_card">
+                <div class="umrah_card_top">
+                    <div class="card_top left"><i style="margin: auto;" class="fa-solid fa-calendar-days"></i>&nbsp;10 MAR 2024</div>
+                    <div class="card_top right"><i style="margin: auto;" class="fa-solid fa-hourglass-half"></i>&nbsp;12 HARI</div>
+                </div>
+                <img class="card_img" src="assets/img/umr-01aa.jpeg" onclick="onClick(this)">
+                <div class="card_top down">Seat Tersedia:&nbsp;<i style="margin: 4px 2px;" class="fa-solid fa-person"></i>&nbsp;35 Dari 35 PAX
+                </div>
+            </div>
+            <div class="umrah_card">
+                <div class="umrah_card_top">
+                    <div class="card_top left"><i style="margin: auto;" class="fa-solid fa-calendar-days"></i>&nbsp;26 MAR 2024</div>
+                    <div class="card_top right"><i style="margin: auto;" class="fa-solid fa-hourglass-half"></i>&nbsp;17 HARI</div>
+                </div>
+                <img class="card_img" src="assets/img/umr-02.jpeg" onclick="onClick(this)">
+                <div class="card_top down">Seat Tersedia:&nbsp;<i style="margin: 4px 2px;" class="fa-solid fa-person"></i>&nbsp;35 Dari 40 PAX
+                </div>
+            </div>
+            <div class="umrah_card">
+                <div class="umrah_card_top">
+                    <div class="card_top left"><i style="margin: auto;" class="fa-solid fa-calendar-days"></i>&nbsp;15 APR 2024</div>
+                    <div class="card_top right"><i style="margin: auto;" class="fa-solid fa-hourglass-half"></i>&nbsp;9 HARI</div>
+                </div>
+                <img class="card_img" src="assets/img/umr-03.jpeg" onclick="onClick(this)">
+                <div class="card_top down">Seat Tersedia:&nbsp;<i style="margin: 4px 2px;" class="fa-solid fa-person"></i>&nbsp;34 Dari 40 PAX
+                </div>
+            </div>
+            <div class="umrah_card">
+                <div class="umrah_card_top">
+                    <div class="card_top left"><i style="margin: auto;" class="fa-solid fa-calendar-days"></i>&nbsp;15 APR 2024</div>
+                    <div class="card_top right"><i style="margin: auto;" class="fa-solid fa-hourglass-half"></i>&nbsp;9 HARI</div>
+                </div>
+                <img class="card_img" src="assets/img/umr-04.jpeg" onclick="onClick(this)">
+                <div class="card_top down">Seat Tersedia:&nbsp;<i style="margin: 4px 2px;" class="fa-solid fa-person"></i>&nbsp;- PAX
+                </div>
+            </div>
+        </div>
+        <div class="umrah_quote">
+            “Ibadah umrah ke ibadah umrah berikutnya adalah penggugur (dosa) di antara keduanya, dan haji yang mabrur tiada balasan (bagi pelakunya) melainkan surga” (HR al-Bukhari dan Muslim)
+        </div>
+    </div>
+    
+    <div id="2" class="hajj">
+        <p>Ibadah haji bersama Darul Haromain</p>
+        <div class="umrah_quote">
+            “Islam itu didirikan di atas 5 (lima) pilar syahadat tiada ilah selain Allah dan sesungguhnya Muhammad Rasulullah, mendirikan shalat, membayar zakat, haji ke Baitullah dan puasa di bulan Ramadhan”. (HR. Bukhari & Muslim)
+        </div>
+        <div class="hajj_content">
+            <img style="width: 30vw; border-radius: 12px; margin: 20px;" src="assets/img/haji.jpg" onclick="onClick(this)">
+            <div>
+                <p>Berangkat haji Ke Baitullah bersama Darul Haromain dengan Paket HAJI KHUSUS/PLUS DAN HAJI FURODA</p>
+                <ul>
+                    <li>Kuota RESMI dari KEMENAG RI</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="3" class="visa">
+        <p>Apply visa bersama Darul Haromain</p>
+        <div class="umrah_quote">
+            "Shalat di Masjidil Harom lebih utama daripada 100.000 shalat di masjid lainnya" (HR. Ahmad 3/343 dan Ibnu Majah no. 1406, dari Jabir bin 'Abdillah).
+        </div>
+        <div class="visa_content">
+            <img style="width: 30vw; border-radius: 12px; margin: 20px;" src="assets/img/visa.jpg" onclick="onClick(this)">
+        </div>
+    </div>
     <div class="footer">
         <div>
             <div style="text-align: center;">INFORMASI KANTOR</div>
@@ -131,33 +157,27 @@
             </table>
         </div>
         <div style="display: flex;">
-            <a href="https://akreditasi.bsn.go.id/" target="_blank"><img style="max-width: 70px; margin: 4px;"src="images/kan.png"></a>
-            <a href="https://www.asphurindo.org/" target="_blank"><img style="max-width: 70px; max-height: 40px;  margin: 4px;"src="images/asphurindo.png"></a>
-            <a href="https://www.kemenag.go.id/" target="_blank"><img style="max-width: 70px; max-height: 30px; margin: 4px;"src="images/kemenag.png"></a>
-            <a href="https://umrahcerdas.kemenag.go.id/home/detail/772" target="_blank"><img style="max-width: 70px; margin: 4px;" src="images/siskopatuh.png" alt="Siskopatuh"></a>
+            <a href="https://akreditasi.bsn.go.id/" target="_blank"><img style="max-width: 70px; margin: 4px;"src="assets/img/kan.png"></a>
+            <a href="https://www.asphurindo.org/" target="_blank"><img style="max-width: 70px; max-height: 40px;  margin: 4px;"src="assets/img/asphurindo.png"></a>
+            <a href="https://www.kemenag.go.id/" target="_blank"><img style="max-width: 70px; max-height: 30px; margin: 4px;"src="assets/img/kemenag.png"></a>
+            <a href="https://umrahcerdas.kemenag.go.id/home/detail/772" target="_blank"><img style="max-width: 70px; margin: 4px;" src="assets/img/siskopatuh.png" alt="Siskopatuh"></a>
          </div>
-        <div style="width: 100%; background-color: black; font-size: 12px; margin: auto; text-align: center;">
+         <div style="width: 100%; background-color: black; font-size: 12px; margin: auto; text-align: center;">
             <i class="fa-regular fa-copyright"></i>&nbsp;2024 Darul Haromain Hajj & Umroh
         </div>       
     </div>
 
-    <!-- SCROLL TO TOP BUTTON -->
-    <button onclick="goToTop()" id="btntop" title="go to top"><i class="fa-solid fa-arrow-up"></i></button>
-    <!-- WHATSAPP BUTTON -->
-    <button id="btnwa" title="contact whatsapp"><a id="link_wa" href="https://wa.me/6283890397772?text=Assalamualaikum%20Saya%20tertarik%20untuk%20berangkat%20umrah%20bersama%20Darul%20Haromain" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></button>
-
-
     <!-- MODAL STARTS HERE -->
-    <div id="modal01" class="modal" onclick="this.style.display='none'">
+    <div id="modal01" class="modal">
         <!-- Close button -->
         <span class="close">&times;</span>
         <!-- Modal Content (The Image) -->
         <img class="modal_content" id="img01">
-         <!-- Modal Caption (Image Text) -->
-         <div id="caption"></div>
     </div>
 
+
     <script src="https://kit.fontawesome.com/d0f7f1d731.js" crossorigin="anonymous"></script>
-    <script src="scripts/main.js"></script>
+    <script src="assets/scripts/grabscroll.js"></script>
+    <script src="assets/scripts/modal.js"></script>
 </body>
 </html>
