@@ -22,7 +22,7 @@ img.onclick = function () {
     modal.style.display = "none";
 }
 
-let totalJamaah = 1200
+let totalJamaah = 1284
 document.getElementById("jamaah").innerHTML = totalJamaah
 
 // click to page section

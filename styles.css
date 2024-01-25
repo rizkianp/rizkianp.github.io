@@ -8,9 +8,15 @@
     src: url(assets/fonts/Carattere-Regular.ttf);
 }
 
+@font-face {
+    font-family: jakarta;
+    src: url(assets/fonts/PlusJakartaSans-Regular.ttf);
+}
+
 
 html {
     color: white;
+    font-family: 'jakarta', 'arial  ';
 }
 
 body {
@@ -267,6 +273,7 @@ body {
 .hajj_content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .visa {
