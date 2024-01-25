@@ -33,3 +33,22 @@ function goToSection(id) {
         section.scrollIntoView({behavior: 'smooth'});
     }
 }
+
+// change hajj brochure
+const hajjImages = ["assets/img/haji.jpg", "assets/img/hajj01.jpeg", "assets/img/hajj01a.jpeg"];
+let currentIndex = 0;
+
+// ensure index stay within bounds
+function nextImg(x) {
+    currentIndex += x;
+
+    if (currentIndex < 0) {
+        currentIndex = hajjImages.length -1;
+    } else if (currentIndex >= hajjImages.length) {
+        currentIndex = 0;
+    }
+    // update image source
+    const currentHajjImage = document.getElementById("img_haji");
+    currentHajjImage.src = hajjImages[currentIndex]
+}
+
