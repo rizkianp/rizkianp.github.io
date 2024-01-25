@@ -282,6 +282,10 @@ body {
     flex-direction: column;
 }
 
+#img_haji {
+    transition: transform 0.1s ease-in-out;
+}
+
 .visa {
     display: flex;
     flex-direction: column;

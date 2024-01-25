@@ -49,6 +49,16 @@ function nextImg(x) {
     }
     // update image source
     const currentHajjImage = document.getElementById("img_haji");
-    currentHajjImage.src = hajjImages[currentIndex]
+
+    // slide animation
+    
+    const slideAmount = x > 0 ? "-0.5%" : "0.5%";
+    currentHajjImage.style.transform = `translateX(${slideAmount})`;
+
+    setTimeout(() => {
+        currentHajjImage.src = hajjImages[currentIndex];
+        currentHajjImage.style.transform = 'translateX(0)';
+    }, 100);
+
 }
 
