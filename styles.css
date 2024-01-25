@@ -287,6 +287,12 @@ body {
     background-position: left center;
 }
 
+.visa_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
