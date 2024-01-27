@@ -101,6 +101,10 @@ body {
     border-radius: 12px;
 }
 
+#umrahtrack {
+    cursor: pointer;
+}
+
 .umrah {
     display: flex;
     flex-direction: column;
@@ -114,17 +118,6 @@ body {
 .umrah_tx {
     font-size: 1.5rem;
     text-align: center;
-}
-
-.umrah_card_container {
-    display: flex;
-    overflow: auto;
-    flex-wrap: nowrap;
-    cursor: pointer;
-    overflow-x: hidden;
-    transition: all 0.2s;
-    transform: scale(0.98);
-    will-change: transform;
 }
 
 .umrah_card {
@@ -316,6 +309,31 @@ body {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+/* Scroll to top */
+#button_top {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 99;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 12px 15px;
+    border-radius: 12px;
+    font-size: 18px;
+}
+
+#button_top:hover {
+    background-color: white;
+    mix-blend-mode: screen;
+    color: black;
+    animation-name: poke;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
 
 .footer {
     display: flex;
