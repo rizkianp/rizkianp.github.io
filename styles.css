@@ -63,7 +63,7 @@ body {
 .hero_button {
     border: 2px solid white;
     padding: 4px;
-    width: 160px; height: 60px;
+    width: 160px; height: auto;
     background-color: transparent;
     color: white;
     font-size: 28px;
@@ -75,6 +75,25 @@ body {
     background-color: white;
     mix-blend-mode: screen;
     color: black;
+}
+
+.wa_button {
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 8px;
+    width: auto; height: auto;
+    background-color: transparent;
+    color: white;
+    font-size: 28px;
+    margin: 10px;
+    transition: 0.25s;
+}
+
+.wa_button:hover {
+    cursor: pointer;
+    mix-blend-mode: screen;
+    background-color: #128C7E;
+    color: white;
 }
 
 .card_img {
