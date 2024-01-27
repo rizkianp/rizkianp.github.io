@@ -131,7 +131,7 @@ function nextImg(x) {
 // SplideJS Initialization
 document.addEventListener( 'DOMContentLoaded', function() {
     var splide = new Splide( '#splideumrah', {
-    perPage: 5,
+    perPage: 2,
     breakpoints: {
       700: {
         perPage: 1,
@@ -141,4 +141,11 @@ document.addEventListener( 'DOMContentLoaded', function() {
     omitEnd: true,
     } );
   splide.mount();
+
+  var splide2 = new Splide( '#splidehaji', {
+    perPage: 1,
+    focus  : 0,
+    omitEnd: true,
+    } );
+  splide2.mount();
   } );
