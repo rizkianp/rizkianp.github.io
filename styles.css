@@ -17,6 +17,7 @@
 html {
     color: white;
     font-family: 'jakarta', 'arial  ';
+    font-size: 18px;
 }
 
 body {
@@ -45,16 +46,10 @@ body {
     height: 100vh;
 }
 
-#hero_nav {
-    position: absolute;
-    right: 0;
-    color: white;
-    z-index: 99;
-}
-
 #izin {
-    max-width: 180px;
-    max-height: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.65rem;
 }
 
 #hero_content {
