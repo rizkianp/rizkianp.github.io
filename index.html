@@ -8,7 +8,10 @@
     <link href="assets/styles/splide-sea-green.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="nav"></div>
+    <div class="nav" id="nav">
+        <img src="assets/img/logo_dh_mini.png" alt="logo darul haromain" id="logo_header" style="max-width: 22px; margin: 0;">
+        <i id ="logo_text" style="font-family: 'brighter', 'Arial'; font-size: 1rem;">&nbsp;&nbsp;Teman Setia Menuju Baitullah</i>
+    </div>
     <div class="hero">
         <video autoplay muted loop id="video_bg">
             <source src="assets/vid/vidbg-00.mp4" type="video/mp4">
@@ -105,8 +108,8 @@
         <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; background-color: rgba(0,0,0,0.25);" >           
             <div style="display: flex; flex-direction: column; height: auto;  align-items: center;" >
                 <p style="text-align: center;">Kuota sangat terbatas, peminat terus bertambah, segerakan niat baik Anda, Klik tombol di bawah untuk mendaftar!</p>
-                <button style="width: auto;" class="wa_button snk" onclick="onClickSnk(this)"><i class="fa-solid fa-list-check"></i>&nbsp;Syarat & Ketentuan</button>
-                <button style="width: auto;"  class="wa_button" onclick="goToSection(3)"><i class="fa-brands fa-whatsapp"></i>&nbsp;Daftar Sekarang</button>
+                <button style="width: 15vw;" class="snk_button" onclick="onClickSnk(this)"><i class="fa-solid fa-list-check"></i>&nbsp;Syarat & Ketentuan</button>
+                <button class="wa_button" onclick="goToSection(3)"><i class="fa-brands fa-whatsapp"></i>&nbsp;Daftar Sekarang</button>
             </div>
         <div class="perlengkapan">
         </div>
@@ -139,7 +142,7 @@
                 </div>
             </section>       
             <p style="text-align: center;">Berangkat haji Ke Baitullah bersama Darul Haromain dengan Paket HAJI KHUSUS dan HAJI FURODA</p>
-            <button style="width: auto; margin-bottom: 60px;"  class="wa_button" onclick="goToSection(3)"><i class="fa-brands fa-whatsapp"></i>&nbsp;Konsultasi Sekarang</button>
+            <button style="margin-bottom: 60px;"  class="wa_button" onclick="goToSection(3)"><i class="fa-brands fa-whatsapp"></i>&nbsp;Konsultasi Sekarang</button>
         </div>
     </div>
     <div id="3" class="visa">
@@ -150,7 +153,7 @@
         <div class="visa_content">
             <img style="width: 46vw; border-radius: 12px; margin: 20px; cursor: pointer;" src="assets/img/visa.jpg" onclick="onClick(this)">
             <p style="text-align: center;">Darul Haromain adalah penyedia VISA Resmi perorangan dan grup.</p>
-            <button style="width: auto; margin-bottom: 60px;"  class="wa_button" onclick="goToSection(3)"><i class="fa-brands fa-whatsapp"></i>&nbsp;Konsultasi Sekarang</button>
+            <button style="margin-bottom: 60px;"  class="wa_button" onclick="goToSection(3)"><i class="fa-brands fa-whatsapp"></i>&nbsp;Konsultasi Sekarang</button>
         </div>
     </div>
     <div id="1" class="dokumentasi">
@@ -219,7 +222,6 @@
         <!-- Modal Content (Page)-->
         <div class="modal_snk_content" style="display: flex; justify-content: space-between;">
             <div style="display: flex; flex-direction: column;">
-                <p>Syarat & Ketentuan Umrah:</p>
                 <u>Harga Sudah Termasuk:</u>
                     <ul class="fa-ul">
                         <li><span class="fa-li"><i class="fa-solid fa-check"></i></span> Pesawat PP Kelas Ekonomi</li>
@@ -241,6 +243,32 @@
                         <li><span class="fa-li"><i class="fa-solid fa-x"></i></span>Biaya transport dari daerah ke Bandara Keberangkatan</li>
                     </ul>
                 <p style="font-style: italic; font-size: 0.75rem;">*Dalam kondisi khusus: Keberangkatan & Harga sewaktu-waktu dapat berubah mengikuti kebijakan Maskapai Penerbangan dan pemerintah Arab Saudi.</p>
+                <u>Syarat & Ketentuan Pendaftaran Umrah:</u>
+                <ol>
+                    <li>Jamaah resiko tinggi harus di damping pihak keluarga (mempunyai Riwayat penyakit atau sudah usia lanjut).</li>
+                    <li>Jika Jamaah meninggal di Arab Saudi maka jenazah tidak dapat dipulangkan ke Indonesia.</li>
+                    <li>Jamaah membayar DP Umroh Rp. 5.000.000 (Lima Juta Rupiah) pada saat pendaftaran.</li>
+                    <li>Jamaah harus melakukan pembayaran tahap II H-46 sebesar 50% dari harga paket.</li>
+                    <li>Pelunasan paling lambat 1 Bulan s/d 3 Minggu sebelum tanggal keberangkatan.</li>
+                    <li>Apabila 1 Bulan s/d 3 Minggu sebelum keberangkatan tidak melakukan pelunasan kami anggap mengundurkan diri atau,</li>
+                    <li>Jika melakukan pembatalan ketentuannya sebagai berikut:
+                        <ul>
+                            <li>Pembatalan setelah membayar DP Umroh akan dikenakan potongan Rp. 1.500.000 dari DP Umroh</li>
+                            <li>Pembatalan H-45 sampai H-31 dari Tanggal Keberangkatan dikenakan Potongan 25% dari Harga Paket</li>
+                            <li>Pembatalan H-30 sampai H-15 dari Tanggal Keberangkatan dikenakan Potongan 75% dari Harga Paket</li>
+                            <li>Pembatalan H-14 sebelum keberangkatan dipotong 100% dari Biaya Paket</li>
+                        </ul>
+                    <li>Jika calon Jamaah sakit atau meninggal dunia H-15 maka dapat digantikan oleh pihak keluarga.</li>
+                    <li>Jika calon Jamaah sakit atau meninggal dunia H-14 sebelum keberangkatan, dapat
+                        digantikan dengan calon Jamaah atau Keluarga yang lain dengan catatan dikenakan
+                        Biaya Tambahan Tiket baru atau pergantian nama di Tiket sesuai dengan kebijakan
+                        Maskapai dan penyesuaian harga kamar yang tersedia.</li>   
+                    <li>Jika ada pergantian calon jamaah H-14 maka akan mengacu kepada aturan tiket, visa dan hotel yang akan digunakan.</li> 
+                    </li>
+                </ol>
+                <div style="margin: auto; ">
+                    <button style="margin-bottom: 10px; z-index: 1;"  class="setuju" onclick="closeSnk()"><i class="fa-regular fa-handshake"></i></i>&nbsp;Saya Setuju</button>
+                </div>
             </div>
             <span style="cursor: pointer; font-size: 1.5rem;" onclick="closeSnk()"><i class="fa-regular fa-circle-xmark"></i></span>  
         </div>

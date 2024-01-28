@@ -2,6 +2,7 @@
 let modal = document.getElementById("modal01");
 let img = document.getElementById("img01");
 let modal_snk = document.getElementById("modal02");
+let nav = document.getElementById("nav");
 
 
 function disableScroll() {
@@ -13,10 +14,15 @@ function disableScroll() {
     window.onscroll = function () {
         window.scrollTo(scrollLeft, scrollTop);
     };
+  topButton.animate(fadeOut, fadeTiming).onfinish = function () {
+    topButton.style.display = "none";
+  };
 }
 
 function enableScroll() {
-    window.onscroll = function () {};
+  window.onscroll = function () {
+    scrollFunction();
+  };
 }
 
 function onClick(element) {
@@ -73,23 +79,28 @@ const fadeIn = [
   };
   
   // when scroll down 30px from top, show the button with fade-in animation
-  window.onscroll = function () {
-    scrollFunction();
-  };
+window.onscroll = function () {
+  scrollFunction();
+};
 
-  function scrollFunction() {
-    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-  
-    if (scrollTop > 800 && topButton.style.display !== "block") {
-      // Button becomes visible, play fade-in animation
-      topButton.style.display = "block";
-      topButton.animate(fadeIn, fadeTiming);
-    } else if (scrollTop <= 30 && topButton.style.display !== "none") {
-      // Button becomes not visible, play fade-out animation
-      topButton.animate(fadeOut, fadeTiming).onfinish = function () {
-        topButton.style.display = "none";
-      };
-    }
+function scrollFunction() {
+  const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+  if (scrollTop > 800 && topButton.style.display !== "block") {
+    // Button becomes visible, play fade-in animation
+    topButton.style.display = "block";
+    nav.style.display = "flex";
+    topButton.animate(fadeIn, fadeTiming);
+    nav.animate(fadeIn, fadeTiming);
+  } else if (scrollTop <= 30 && topButton.style.display !== "none") {
+    // Button becomes not visible, play fade-out animation
+    topButton.animate(fadeOut, fadeTiming).onfinish = function () {
+      topButton.style.display = "none";
+    };
+    nav.animate(fadeOut, fadeTiming).onfinish = function () {
+      nav.style.display = "none";
+    };
+  }
 }
 
 function goToTop() {
@@ -165,6 +176,11 @@ document.addEventListener( 'DOMContentLoaded', function() {
 
   var splide3 = new Splide('#dokumentasi', {
     perPage: 4,
+    breakpoints: {
+      700: {
+        perPage: 1,
+      },
+    },
     focus: 0,
     omitEnd: true,
   } );

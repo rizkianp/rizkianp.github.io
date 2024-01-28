@@ -27,8 +27,17 @@ body {
 }
 
 .nav {
-    display: flex;
+    position: fixed;
     top: 0;
+    width: 100%;
+    z-index: 99;
+    overflow: hidden;
+    display: none;
+    background-color: #161A30;
+    color: white;
+    padding: 2px 2px;
+    align-items: center;
+    margin: 0;
 }
 
 #video_bg {
@@ -62,41 +71,59 @@ body {
 
 .hero_button {
     border: 2px solid white;
+    border-radius: 12px;
     padding: 4px;
-    width: 160px; height: auto;
-    background-color: transparent;
+    width: 15vw; height: auto;
+    background-color: #38419D;
+    mix-blend-mode: screen;
     color: white;
-    font-size: 28px;
+    font-size: 1.5rem;
     margin: 10px;
+    transition: 0.25s;
 }
 
 .hero_button:hover {
     cursor: pointer;
-    background-color: white;
+    background-color: #280274;
     mix-blend-mode: screen;
-    color: black;
+    color: white;
 }
 
-.wa_button {
+.wa_button, .snk_button, .setuju {
     border: 2px solid white;
     border-radius: 12px;
     padding: 8px;
     width: 15vw; height: auto;
-    background-color: transparent;
+    background-color: #128C7E;
+    mix-blend-mode: screen;
     color: white;
     font-size: 1.2rem;
     margin: 10px;
     transition: 0.25s;
 }
 
-.snk:hover {
-    background-color: yellow;
+.setuju {
+    mix-blend-mode: normal;
+}
+
+.setuju:hover {
+    cursor: pointer;
+    background-color: #09534b
+}
+
+.snk_button {
+    background-color: #C07F00;
+}
+
+.snk_button:hover {
+    background-color: #77775a;
+    cursor: pointer;
 }
 
 .wa_button:hover {
     cursor: pointer;
     mix-blend-mode: screen;
-    background-color: #128C7E;
+    background-color: #075e54;
     color: white;
 }
 
@@ -230,6 +257,7 @@ body {
 
 .modal_snk_content {
     background-color: white;
+    font-size: 0.8rem;
     color: black;
     margin: 5% auto;
     padding: 20px;
@@ -237,7 +265,7 @@ body {
     border-radius: 12px;
     width: 60%;
     animation-name: animatetop;
-    animation-duration: 1s
+    animation-duration: 1s;
 }
 
 @keyframes animatetop {
@@ -319,6 +347,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 
@@ -359,6 +388,7 @@ body {
 #dokimg img {
     width: 20vw;
     border-radius: 12px;
+    margin: auto;
 }
 
 /* Scroll to top */
@@ -368,7 +398,8 @@ body {
     right: 30px;
     z-index: 99;
     border: 2px solid white;
-    background-color: transparent;
+    background-color: #38419D;
+    mix-blend-mode: screen;
     color: white;
     cursor: pointer;
     padding: 12px 15px;
@@ -377,9 +408,9 @@ body {
 }
 
 #button_top:hover {
-    background-color: white;
+    background-color: #280274;
     mix-blend-mode: screen;
-    color: black;
+    color: white;
     animation-name: poke;
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
