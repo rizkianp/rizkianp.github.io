@@ -392,7 +392,7 @@ body {
 }
 
 /* Scroll to top */
-#button_top {
+#button_top, #button_wa {
     position: fixed;
     bottom: 40px;
     right: 30px;
@@ -407,13 +407,22 @@ body {
     font-size: 18px;
 }
 
-#button_top:hover {
+#button_wa {
+    bottom: 100px;
+    background-color: #128C7E;
+}
+
+#button_top:hover, #button_wa:hover {
     background-color: #280274;
     mix-blend-mode: screen;
     color: white;
     animation-name: poke;
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
+}
+
+#button_wa:hover {
+    background-color: #075e54;
 }
 
 

@@ -15,7 +15,10 @@ function disableScroll() {
         window.scrollTo(scrollLeft, scrollTop);
     };
   topButton.animate(fadeOut, fadeTiming).onfinish = function () {
-    topButton.style.display = "none";
+    topButton.style.display = "none";  
+  };
+  waButton.animate(fadeOut, fadeTiming).onfinish = function () {
+    waButton.style.display = "none";  
   };
 }
 
@@ -61,6 +64,7 @@ img.onclick = function () {
 //when button clicked, scroll to top
 
 let topButton = document.getElementById("button_top");
+let waButton = document.getElementById("button_wa");
 
 // Define fade-in and fade-out animations
 const fadeIn = [
@@ -89,13 +93,18 @@ function scrollFunction() {
   if (scrollTop > 800 && topButton.style.display !== "block") {
     // Button becomes visible, play fade-in animation
     topButton.style.display = "block";
+    waButton.style.display = "block";
     nav.style.display = "flex";
     topButton.animate(fadeIn, fadeTiming);
+    waButton.animate(fadeIn, fadeTiming);
     nav.animate(fadeIn, fadeTiming);
   } else if (scrollTop <= 30 && topButton.style.display !== "none") {
     // Button becomes not visible, play fade-out animation
     topButton.animate(fadeOut, fadeTiming).onfinish = function () {
       topButton.style.display = "none";
+    };
+    waButton.animate(fadeOut, fadeTiming).onfinish = function () {
+      waButton.style.display = "none";
     };
     nav.animate(fadeOut, fadeTiming).onfinish = function () {
       nav.style.display = "none";
