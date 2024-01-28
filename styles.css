@@ -26,6 +26,11 @@ body {
     margin: 0;
 }
 
+h2 {
+    font-size: 4rem; 
+    font-family: 'brighter', 'arial';
+}
+
 .nav {
     position: fixed;
     top: 0;
@@ -67,6 +72,10 @@ body {
     text-align: center;
     width: 100%;
     color:white;
+}
+
+#logo_dh {
+    max-width: 30vw;
 }
 
 .hero_button {
@@ -399,10 +408,15 @@ body {
     cursor: pointer;
 }
 
-#dokimg img {
-    width: 20vw;
-    border-radius: 12px;
+#dokumentasi {
+    width: 92vw;
     margin: auto;
+}
+
+
+#img_dok{
+    border-radius: 12px;
+    max-width: 22.5vw;
 }
 
 /* Scroll to top */
@@ -452,6 +466,10 @@ body {
 }
 
 @media only screen and (max-width: 1382px) {
+
+    h2 {
+        font-size: 3rem; 
+    }
     
     .down {
         font-size: 0.8rem;
@@ -465,12 +483,24 @@ body {
         font-size: 0.95rem;
     }
 
+    #dokumentasi {
+        width: 90vw;
+    }
+
+    #img_dok {
+        max-width: 22vw;
+    }
+
   }
 
 @media only screen and (max-width: 992px) {
 
     .umrah_card_top {
         font-size: 0.8rem;
+    }
+
+    h2 {
+        font-size: 2.75rem; 
     }
 
     .wa_button {
@@ -492,11 +522,27 @@ body {
     #img_haji {
         max-width: 56vw;
     }
+
+    #dokumentasi {
+        width: 81vw;
+    }
+
+    #img_dok {
+        max-width: 26vw;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     .wa_button {
         width: 28vw;
+    }
+
+    #logo_dh {
+        max-width: 50vw;
+    }
+
+    h2 {
+        font-size: 2.25rem; 
     }
 
     .snk_button {
@@ -528,11 +574,23 @@ body {
         font-size: 0.9rem;
     }
 
+    #dokumentasi {
+        width: 78vw;
+    }
+
+    #img_dok {
+        max-width: 38vw;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
     .hero_button {
         width: 40vw;
+    }
+
+    #logo_dh {
+        max-width: 50vw;
     }
 
     .nav_button {
@@ -565,12 +623,6 @@ body {
         flex-direction: row;
     }
 
-    #dokimg img {
-        width: 39vw;
-        border-radius: 12px;
-        margin: auto;
-    }
-
     #visa_img {
         width: 75vw;
     }
@@ -583,4 +635,50 @@ body {
         max-width: 48vw;
     }
 
+    #dokumentasi {
+        width: 54vw;
+    }
+
+    #img_dok {
+        max-width: 54vw;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    #logo_dh {
+        max-width: 70vw;
+    }
+
+    h2 {
+        font-size: 1.85rem; 
+    }
+
+    #video_bg {
+        display: none;
+    }
+
+    .hero_button {
+        width: 70vw;
+    }
+
+    .wa_button {
+        width: 70vw;
+    }
+
+    .snk_button {
+        width: 70vw;
+    }
+
+    .umrah_tx {
+        max-width: 80vw;
+    }
+
+    #splidehaji {
+        width: 54vw;
+    }
+
+    #img_haji {
+        max-width: 44vw;
+    }
 }

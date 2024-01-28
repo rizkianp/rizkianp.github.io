@@ -189,8 +189,14 @@ document.addEventListener( 'DOMContentLoaded', function() {
   var splide3 = new Splide('#dokumentasi', {
     perPage: 4,
     breakpoints: {
-      600: {
+      992: {
+        perPage: 3,
+      },
+      768: {
         perPage: 2,
+      },
+      600: {
+        perPage: 1,
       },
     },
     focus: 0,
