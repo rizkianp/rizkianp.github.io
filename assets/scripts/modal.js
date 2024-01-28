@@ -1,6 +1,8 @@
 //get the modal
 let modal = document.getElementById("modal01");
 let img = document.getElementById("img01");
+let modal_snk = document.getElementById("modal02");
+
 
 function disableScroll() {
     // get current page scroll position
@@ -25,6 +27,18 @@ function onClick(element) {
         modal.style.display = "block";
         disableScroll();
     }    
+}
+
+function onClickSnk() {
+  modal_snk.style.display = "block";
+  disableScroll();
+}
+
+function closeSnk() {
+  modal_snk.animate(fadeOut,fadeTiming).onfinish = function () {
+    modal_snk.style.display = "none";
+  };
+  enableScroll();
 }
 
 let span = document.getElementsByClassName("close")[0];
@@ -131,7 +145,7 @@ function nextImg(x) {
 // SplideJS Initialization
 document.addEventListener( 'DOMContentLoaded', function() {
     var splide = new Splide( '#splideumrah', {
-    perPage: 2,
+    perPage: 4,
     breakpoints: {
       700: {
         perPage: 1,

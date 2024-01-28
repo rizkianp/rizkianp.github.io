@@ -89,6 +89,10 @@ body {
     transition: 0.25s;
 }
 
+.snk:hover {
+    background-color: yellow;
+}
+
 .wa_button:hover {
     cursor: pointer;
     mix-blend-mode: screen;
@@ -105,7 +109,7 @@ body {
     cursor: pointer;
 }
 
-.umrah {
+.umrah, .dokumentasi {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -116,7 +120,6 @@ body {
 }
 
 .umrah_tx {
-    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -205,7 +208,7 @@ body {
 }
 
 /* MODAL UNTUK KARTU UMRAH KETIKA DIKLIK */
-.modal {
+.modal, .modal_snk {
     display: none;
     position: fixed;
     z-index: 2;
@@ -224,6 +227,23 @@ body {
     animation-name: zoom;
     animation-duration: 0.3s;
 }
+
+.modal_snk_content {
+    background-color: white;
+    color: black;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 12px;
+    width: 60%;
+    animation-name: animatetop;
+    animation-duration: 1s
+}
+
+@keyframes animatetop {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
 
 @keyframes zoom {
     from {transform:scale(0)}
@@ -285,7 +305,9 @@ body {
 .hajj {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    height: auto;
     position: relative;
     background-image: url("assets/img/bg-hajj0.webp");
     background-size: cover;
@@ -294,16 +316,14 @@ body {
 
 .hajj_content {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-#splideumrah {
-    width: 40vw;
-}
 
 #splidehaji {
-    width: 32vw;
+    width: 48vw;
 }
 
 #hajitrack {
@@ -311,10 +331,16 @@ body {
     margin: 6px;
 }
 
+#img_haji {
+    max-width: 46vw;
+    border-radius: 12px;
+    margin: 20px;
+}
+
 .visa {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: auto;
     background-color: #213555;
     position: relative;
     background-image: url("assets/img/bg-visa0.webp");
@@ -324,7 +350,9 @@ body {
 
 .visa_content {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
 }
 
