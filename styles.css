@@ -356,6 +356,11 @@ body {
     justify-content: center;
 }
 
+#dokimg img {
+    width: 20vw;
+    border-radius: 12px;
+}
+
 /* Scroll to top */
 #button_top {
     position: fixed;

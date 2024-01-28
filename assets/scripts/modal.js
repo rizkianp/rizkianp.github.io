@@ -162,4 +162,11 @@ document.addEventListener( 'DOMContentLoaded', function() {
     omitEnd: true,
     } );
   splide2.mount();
+
+  var splide3 = new Splide('#dokumentasi', {
+    perPage: 4,
+    focus: 0,
+    omitEnd: true,
   } );
+  splide3.mount();
+} );
