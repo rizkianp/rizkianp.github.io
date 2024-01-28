@@ -170,7 +170,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
       992: {
         perPage: 3,
       },
-      700: {
+      600: {
         perPage: 1,
       },
     },
@@ -189,8 +189,8 @@ document.addEventListener( 'DOMContentLoaded', function() {
   var splide3 = new Splide('#dokumentasi', {
     perPage: 4,
     breakpoints: {
-      700: {
-        perPage: 1,
+      600: {
+        perPage: 2,
       },
     },
     focus: 0,

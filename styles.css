@@ -392,6 +392,13 @@ body {
     justify-content: center;
 }
 
+#visa_img {
+    width: 46vw; 
+    border-radius: 12px; 
+    margin: 20px; 
+    cursor: pointer;
+}
+
 #dokimg img {
     width: 20vw;
     border-radius: 12px;
@@ -477,6 +484,14 @@ body {
     .hero_button {
         font-size: 1.2rem;
     }
+
+    #splidehaji {
+        width: 60vw;
+    }
+
+    #img_haji {
+        max-width: 56vw;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -505,12 +520,67 @@ body {
         width: 54vw;
     }
 
-    #imghaji {
-        width: 52vw;
+    #img_haji {
+        max-width: 48vw;
     }
 
     .umrah_tx {
         font-size: 0.9rem;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .hero_button {
+        width: 40vw;
+    }
+
+    .nav_button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wa_button {
+        width: 40vw;
+    }
+
+    .snk_button {
+        width: 40vw;
+    }
+
+    .umrah_tx {
+        font-size: 0.75rem;
+    }
+
+    .footer {
+        font-size: 0.65rem;
+    }
+
+    .umrah_card {
+        max-width: 75vw;
+    }
+
+    .umrah_card_top {
+        flex-direction: row;
+    }
+
+    #dokimg img {
+        width: 39vw;
+        border-radius: 12px;
+        margin: auto;
+    }
+
+    #visa_img {
+        width: 75vw;
+    }
+
+    #splidehaji {
+        width: 54vw;
+    }
+
+    #img_haji {
+        max-width: 48vw;
     }
 
 }
