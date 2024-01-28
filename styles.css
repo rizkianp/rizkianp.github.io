@@ -223,6 +223,13 @@ body {
     background-color: #575e8a;
 }
 
+.harga {
+    margin-bottom: 0px;
+    margin-top: 4px; padding: 2px 10px;
+    justify-content: center;
+    background-color: #E1AA74;
+}
+
 .down {
     margin-bottom: 0px;
     margin-top: 4px; padding: 2px 10px;
