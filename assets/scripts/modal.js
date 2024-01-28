@@ -167,6 +167,9 @@ document.addEventListener( 'DOMContentLoaded', function() {
     var splide = new Splide( '#splideumrah', {
     perPage: 4,
     breakpoints: {
+      992: {
+        perPage: 3,
+      },
       700: {
         perPage: 1,
       },
