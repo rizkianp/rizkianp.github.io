@@ -370,7 +370,8 @@ h2 {
 
 
 #splidehaji {
-    width: 48vw;
+    width: 36vw;
+    margin: auto;
 }
 
 #hajitrack {
@@ -379,7 +380,7 @@ h2 {
 }
 
 #img_haji {
-    max-width: 46vw;
+    max-width: 34vw;
     border-radius: 12px;
     margin: 20px;
 }
@@ -404,7 +405,7 @@ h2 {
 }
 
 #visa_img {
-    width: 46vw; 
+    width: 32vw; 
     border-radius: 12px; 
     margin: 20px; 
     cursor: pointer;
@@ -493,6 +494,11 @@ h2 {
         max-width: 22vw;
     }
 
+    #splidehaji {
+        width: 38vw;
+    }
+
+
   }
 
 @media only screen and (max-width: 992px) {
@@ -531,6 +537,10 @@ h2 {
 
     #img_dok {
         max-width: 26vw;
+    }
+
+    #visa_img {
+        width: 56vw;
     }
 }
 
@@ -614,6 +624,10 @@ h2 {
         font-size: 0.9rem;
     }
 
+    #visa_img {
+        width: 50vw;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -669,6 +683,36 @@ h2 {
         max-width: 54vw;
     }
 
+    #visa_img {
+        width: 56vw;
+    }
+
+    #splidehaji {
+        width: 58vw;
+    }
+
+    #img_haji {
+        max-width: 52vw;
+    }
+
+    #vid_shadow {
+        display: none;
+    }
+
+    #video_bg {
+        display: none;
+    }
+
+    .umrah_tx {
+        max-width: 80vw;
+        margin: auto;
+    }
+
+    .modal_content {
+        margin: 20% auto;
+        max-width: auto;
+    }
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -696,10 +740,6 @@ h2 {
         width: 70vw;
     }
 
-    .umrah_tx {
-        max-width: 80vw;
-    }
-
     #splidehaji {
         width: 54vw;
     }
@@ -715,10 +755,6 @@ h2 {
     .modal_content {
         margin: 50% auto;
         max-width: auto;
-    }
-
-    .umrah_tx {
-        margin: auto;
     }
 
     #button_top, #button_wa {
