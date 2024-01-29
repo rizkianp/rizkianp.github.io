@@ -58,6 +58,9 @@ h2 {
     flex-direction: column;
     position: relative;
     height: 100vh;
+    background-image: url("assets/img/bg-hajj0.webp");
+    background-size: cover;
+    background-position: top;
 }
 
 #izin {
@@ -265,8 +268,7 @@ h2 {
 .modal_content {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
+    max-width: 80vw;
     animation-name: zoom;
     animation-duration: 0.3s;
 }
@@ -430,9 +432,9 @@ h2 {
     mix-blend-mode: screen;
     color: white;
     cursor: pointer;
-    padding: 12px 15px;
+    padding: 12px 14px;
     border-radius: 12px;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 #button_wa {
@@ -704,5 +706,28 @@ h2 {
 
     #img_haji {
         max-width: 44vw;
+    }
+
+    .setuju {
+        width: auto;
+    }
+
+    .modal_content {
+        margin: 50% auto;
+        max-width: auto;
+    }
+
+    .umrah_tx {
+        margin: auto;
+    }
+
+    #button_top, #button_wa {
+        font-size: 0.75rem;
+        right: 20px;
+
+    }
+
+    #vid_shadow {
+        display: none;
     }
 }
