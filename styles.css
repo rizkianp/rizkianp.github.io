@@ -514,6 +514,24 @@ h2 {
 
   }
 
+@media only screen and (max-height: 430px) {
+    #hero_content {
+        bottom: unset;
+    }
+
+}
+
+@media only screen and (max-height: 375px) {
+    #hero_content {
+        bottom: unset;
+    }
+
+    .nav_button {
+        display: block;
+    }
+
+}
+
 @media only screen and (max-width: 992px) {
 
     #logo_dh {
