@@ -625,7 +625,7 @@ h2 {
 
 }
 
-@media only screen and (max-height: 375px) {
+@media only screen and (max-height: 393px) {
     #hero_content {
         bottom: unset;
     }
