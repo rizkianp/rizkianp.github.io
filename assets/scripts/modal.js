@@ -170,6 +170,9 @@ document.addEventListener( 'DOMContentLoaded', function() {
       992: {
         perPage: 3,
       },
+      820: {
+        perPage: 2,
+      },
       600: {
         perPage: 1,
       },
@@ -192,7 +195,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
       992: {
         perPage: 3,
       },
-      768: {
+      820: {
         perPage: 2,
       },
       600: {
