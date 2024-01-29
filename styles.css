@@ -144,6 +144,10 @@ h2 {
     border-radius: 12px;
 }
 
+.splide__pagination {
+    counter-reset: pagination-num;
+  }
+
 #umrahtrack {
     cursor: pointer;
 }
@@ -266,7 +270,7 @@ h2 {
 }
 
 .modal_content {
-    margin: auto;
+    margin:10px auto;
     display: block;
     max-width: 80vw;
     animation-name: zoom;
@@ -297,7 +301,7 @@ h2 {
   }
 
 .close {
-    position: absolute;
+    position: fixed;
     top: 15px;
     right: 35px;
     color: #f1f1f1;
