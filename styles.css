@@ -472,6 +472,10 @@ h2 {
     align-items: center;
 }
 
+.footer_info {
+    margin-top: 10px;
+}
+
 @media only screen and (max-width: 1382px) {
 
     h2 {
