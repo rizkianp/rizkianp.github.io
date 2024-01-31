@@ -220,7 +220,6 @@ document.addEventListener( 'DOMContentLoaded', function() {
         perPage: 1,
       },
     },
-    cover: false,
     video: {
       loop: true,
     },
