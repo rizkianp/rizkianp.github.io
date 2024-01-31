@@ -162,6 +162,10 @@ h2 {
     background-position: left center;
 }
 
+.dokumentasi {
+    align-items: center;
+}
+
 .umrah_tx {
     text-align: center;
 }
@@ -503,6 +507,10 @@ h2 {
         width: 90vw;
     }
 
+    #testimoni {
+        width: 90vw;
+    }
+
     #img_dok {
         max-width: 22vw;
     }
@@ -565,6 +573,10 @@ h2 {
         width: 81vw;
     }
 
+    #testimoni {
+        width: 81vw;
+    }
+
     #img_dok {
         max-width: 26vw;
     }
@@ -621,6 +633,10 @@ h2 {
     }
 
     #dokumentasi {
+        width: 79vw;
+    }
+
+    #testimoni {
         width: 79vw;
     }
 
@@ -737,6 +753,10 @@ h2 {
     }
 
     #dokumentasi {
+        width: 54vw;
+    }
+
+    #testimoni {
         width: 54vw;
     }
 
