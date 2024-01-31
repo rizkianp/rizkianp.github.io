@@ -206,4 +206,27 @@ document.addEventListener( 'DOMContentLoaded', function() {
     omitEnd: true,
   } );
   splide3.mount();
+
+  var splide4 = new Splide('#testimoni', {
+    perPage: 4,
+    breakpoints: {
+      992: {
+        perPage: 3,
+      },
+      820: {
+        perPage: 2,
+      },
+      600: {
+        perPage: 1,
+      },
+    },
+    heightRatio: 0.24,
+    cover: true,
+    video: {
+      loop: true,
+    },
+    focus: 0,
+    omitEnd: true,
+  } );
+  splide4.mount(window.splide.Extensions);
 } );

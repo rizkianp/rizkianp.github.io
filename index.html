@@ -6,6 +6,7 @@
     <title>Darul Haromain</title>
     <link rel="stylesheet" href="styles.css">
     <link href="assets/styles/splide-sea-green.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/css/splide-extension-video.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="nav" id="nav">
@@ -168,7 +169,7 @@
             <button style="margin-bottom: 60px;"  class="wa_button" onclick="goToSection(3)"><i class="fa-brands fa-whatsapp"></i>&nbsp;Konsultasi Sekarang</button>
         </div>
     </div>
-    <div id="1" class="dokumentasi">
+    <div id="4" class="dokumentasi">
         <p style="width: 100%; font-size: 1.25rem; font-weight: bolder; margin-top: 30px; text-align: center; background-color: white; mix-blend-mode: screen; color: black;"><i class="fa-solid fa-image"></i>&nbsp;Dokumentasi</p>
         <section id="dokumentasi" class="splide" aria-label="Dokumentasi Umrah Darul Haromain">
             <div id="dokimg" class="splide__track">
@@ -193,7 +194,15 @@
                     </li>
                 </ul>
             </div>
-        </section>       
+        </section>    
+        <section id="testimoni" class="splide" aria-label="Video Testimoni Umrah Darul Haromain">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=vWq9PGzbwIQ"> <img id="img_dok" src="assets/img/doc/dok04.jpg" >
+                    </li>
+                </ul>
+            </div>
+        </section>   
     </div>
     <div class="footer">
         <div>
@@ -294,7 +303,8 @@
 
 
     <script src="https://kit.fontawesome.com/d0f7f1d731.js" crossorigin="anonymous"></script>
-    <script src="assets/scripts/modal.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/js/splide-extension-video.min.js"></script>
+    <script src="assets/scripts/modal.js"></script>
 </body>
 </html>
