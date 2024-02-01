@@ -132,6 +132,14 @@ h2 {
     cursor: pointer;
 }
 
+.lokasi_button {
+    background-color: #436850;
+}
+
+.lokasi_button:hover {
+    background-color: #12372A;
+}
+
 .wa_button:hover {
     cursor: pointer;
     mix-blend-mode: screen;
@@ -477,6 +485,11 @@ h2 {
     background-image: url("assets/img/bg-loc.jpg");
     background-size: cover;
     background-position: left center;
+    font-size: 0.9rem;
+}
+
+#p_loc {
+    max-width: 90vw;
 }
 
 .cabang {
@@ -645,6 +658,10 @@ iframe {
     .umrah_tx {
         max-width: 90vw;
         margin: auto;
+    }
+
+    iframe {
+        width: 60vw; height: 35vw;
     }
     
 }
@@ -846,6 +863,10 @@ iframe {
         max-width: auto;
     }
 
+    iframe {
+        width: 70vw; height: 40vw;
+    }
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -899,4 +920,5 @@ iframe {
     #vid_shadow {
         display: none;
     }
+
 }
