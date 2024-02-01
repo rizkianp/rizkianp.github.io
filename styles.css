@@ -550,6 +550,14 @@ iframe {
     color: #929292;
 }
 
+#icon_socmed:link {
+    color: white;
+}
+
+#icon_socmed:link:hover {
+    color: #929292;
+}
+
 @media only screen and (max-width: 1382px) {
 
     h2 {
