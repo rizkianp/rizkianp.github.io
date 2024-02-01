@@ -161,6 +161,23 @@ function nextImg(x) {
 
 }
 
+// Lokasi Cabang
+function locCabang(x) {
+  if (x === 0) {
+    window.open(`https://maps.app.goo.gl/nc58RsrGaHXiCRDg9`)
+  }
+  if (x === 1) {
+    window.open(`https://maps.app.goo.gl/NmcuWW1s867AcDXo6`)
+  }
+  if (x === 2) {
+    window.open(`https://maps.app.goo.gl/Jm8m5QEKkuzCFKWk8`)
+  }
+  if (x === 3) {
+    window.open(`https://maps.app.goo.gl/198eGSdcSP9PtKrj9`)
+  }
+}
+
+
 
 // SplideJS Initialization
 document.addEventListener( 'DOMContentLoaded', function() {

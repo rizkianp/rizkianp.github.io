@@ -479,6 +479,13 @@ h2 {
     background-position: left center;
 }
 
+.cabang {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 iframe {
     border-radius: 12px;
     background-color: transparent;
