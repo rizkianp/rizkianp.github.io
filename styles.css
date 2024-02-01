@@ -474,7 +474,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     position: relative;
-    background-image: url("assets/img/bg-visa0.webp");
+    background-image: url("assets/img/bg-loc.jpg");
     background-size: cover;
     background-position: left center;
 }
@@ -482,7 +482,7 @@ h2 {
 iframe {
     border-radius: 12px;
     background-color: transparent;
-    max-width: 35vw;
+    width: 35vw; height: 20vw;
 }
 
 .footer {
@@ -498,6 +498,36 @@ iframe {
 
 .footer_info {
     margin-top: 10px;
+    font-size: 0.85rem;
+}
+
+#socmed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #171618;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+#icon_socmed {
+    margin: 4px 10px;
+    font-size: 1.5rem;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+#icon_socmed:hover {
+    cursor: pointer;
+    color: #929292;
+}
+
+#icon_socmed:visited {
+    color: white;
+}
+
+#icon_socmed:visited:hover {
+    color: #929292;
 }
 
 @media only screen and (max-width: 1382px) {
