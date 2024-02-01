@@ -43,6 +43,7 @@ h2 {
     padding: 2px 2px;
     align-items: center;
     margin: 0;
+    justify-content: center;
 }
 
 #video_bg {
@@ -518,7 +519,6 @@ iframe {
 
 .footer_info {
     margin-top: 10px;
-    font-size: 0.85rem;
 }
 
 #socmed {
@@ -761,7 +761,7 @@ iframe {
         max-width: 48vw;
     }
 
-    .umrah_tx {
+    .umrah_tx, #p_loc {
         font-size: 0.9rem;
     }
 
@@ -793,7 +793,7 @@ iframe {
         width: 40vw;
     }
 
-    .umrah_tx {
+    .umrah_tx, #p_loc {
         font-size: 0.75rem;
     }
 
