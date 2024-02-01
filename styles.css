@@ -59,7 +59,7 @@ h2 {
     flex-direction: column;
     position: relative;
     height: 100vh;
-    background-image: url("assets/img/bg-hajj0.webp");
+    background-image: url("assets/img/bg-hajj0.jpg");
     background-size: cover;
     background-position: top;
 }
@@ -166,7 +166,7 @@ h2 {
     flex-direction: column;
     position: relative;
     height: auto;
-    background-image: url("assets/img/bg-umrah0.webp");
+    background-image: url("assets/img/bg-umrah0.jpg");
     background-size: cover;
     background-position: left center;
 }
@@ -372,7 +372,7 @@ h2 {
     align-items: center;
     height: auto;
     position: relative;
-    background-image: url("assets/img/bg-hajj0.webp");
+    background-image: url("assets/img/bg-hajj0.jpg");
     background-size: cover;
     background-position: left center;
 }
@@ -408,7 +408,7 @@ h2 {
     height: auto;
     background-color: #213555;
     position: relative;
-    background-image: url("assets/img/bg-visa0.webp");
+    background-image: url("assets/img/bg-visa0.jpg");
     background-size: cover;
     background-position: left center;
 }
