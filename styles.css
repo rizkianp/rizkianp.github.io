@@ -486,7 +486,6 @@ h2 {
     background-image: url("assets/img/bg-loc.jpg");
     background-size: cover;
     background-position: left center;
-    font-size: 0.9rem;
 }
 
 #p_loc {
@@ -515,10 +514,6 @@ iframe {
     background-color: #161A30;
     color: white;
     align-items: center;
-}
-
-.footer_info {
-    margin-top: 10px;
 }
 
 #socmed {
