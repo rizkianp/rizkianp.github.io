@@ -121,6 +121,10 @@ function goToTop() {
     })
 }
 
+function chatWa() {
+  window.open("https://wa.me/6285213369104?text=Assalamualaikum%20mau%20tanya%20paket%20umrohnya", "_blank")
+}
+
 // Total Jamaah
 let totalJamaah = 1284;
 document.getElementById("jamaah").innerHTML = totalJamaah;
