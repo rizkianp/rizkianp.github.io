@@ -20,7 +20,24 @@ body {
     margin-top: 0;
 }
 
+#menag_button {
+    border: solid black 3px;
+    background-color: #2A878F;
+    cursor: pointer;
+    font-family: "Kanit";
+    font-size: 1.5rem; color: white;
+    border-radius: 12px;
+    padding: 20px 75px;
+    box-shadow: 0px 8px #888888;
+    margin-top: 0;
+}
+
 #link_wa {
+    text-decoration: none;
+    color: white;
+}
+
+#link_menag {
     text-decoration: none;
     color: white;
 }
@@ -35,6 +52,8 @@ body {
 .header.txt {
     font-size: 2rem;
     text-align: center;
+    max-width: 75vw;
+    font-weight: bold;
 }
 
 .header.txt2 {
@@ -75,9 +94,13 @@ body {
     color: #000000;
 }
 
+.paket.txt2.bold {
+    font-weight: bold;
+}
+
 #pakets {
     border-radius: 12px;
-    width: 30vw;
+    width: 40vw;
     margin: auto;
 }
 
@@ -148,4 +171,108 @@ p.info.klik {
     justify-content: center;
     align-items: center;
     margin-top: 2.5%;
+}
+
+.highlight {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5vw;
+    border-radius: 12px;
+    margin-top: 20px;
+    padding: 10px 25px;
+}
+
+.highlight.warning {
+    background-color: #E72929;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.highlight.good {
+    background-color: #25D366;
+}
+
+.darul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.darul.txt1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 5px 20vw;
+}
+
+ul.list-include {
+    display: inline-block;
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.testimoni {
+    margin-top: 1.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimoni.txt1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 5px 20vw;
+}
+
+hr {
+    width: 75%;
+    border: 1px solid black;
+}
+
+.partner {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner.txt1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 5px 20vw;
+}
+
+.partner.images {
+    display: flex;
+    flex-direction:column;
+}
+
+.partner img {
+    max-width: 10vw;
+}
+
+.kuota.cta2 {
+    color: #1A4D2E;
+}
+
+.daftar.cta2 {
+    background-color: #25D366;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: small;
 }
