@@ -173,6 +173,14 @@ p.info.klik {
     margin-top: 2.5%;
 }
 
+iframe {
+    max-width: 90vw;
+}
+
+.darul img {
+    max-width: 90vw;
+}
+
 .highlight {
     font-weight: bold;
     text-align: center;
