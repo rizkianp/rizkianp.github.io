@@ -328,6 +328,12 @@ hr {
 
 @media only screen and (max-width: 600px) {
 
+    body {
+        width: fit-content;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
     hr {
         width: 95%;
     }
@@ -411,4 +417,5 @@ hr {
     .partner img {
         max-width: 20vw;
     }
+
 }
