@@ -256,7 +256,6 @@ iframe {
 }
 
 ul.list-include {
-    display: inline-block;
     text-align: left;
     font-size: 1.25rem;
     font-weight: bold;
