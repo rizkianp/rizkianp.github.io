@@ -10,9 +10,10 @@ html {
 }
 
 body {
-    margin: 10;
+    margin: auto;
     display: flex;
     flex-direction: column;
+    width: 50vw;
 }
 
 #wa_button {
