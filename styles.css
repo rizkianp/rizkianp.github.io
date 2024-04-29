@@ -346,6 +346,22 @@ hr {
     margin: auto;
 }
 
+#splidepaket {
+    width: 54vw;
+    margin: auto;
+}
+
+#pakettrack {
+    cursor: pointer;
+    margin: 6
+}
+
+#img_paket {
+    max-width: 52vw;
+    border-radius: 12px;
+    margin: 10px;
+}
+
 @media only screen and (max-width: 600px) {
 
     body {
@@ -445,6 +461,17 @@ hr {
 
     #img_testi {
         max-width: 56vw;
+        border-radius: 12px;
+        margin: 5px;
+    }
+
+    #splidepaket {
+        width: 62vw;
+        margin: auto;
+    }
+    
+    #img_paket {
+        max-width: 60vw;
         border-radius: 12px;
         margin: 5px;
     }

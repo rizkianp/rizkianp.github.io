@@ -10,6 +10,13 @@ var splide = new Splide( '#splidetestimoni', {
   focus  : 0,
   omitEnd: true,
   } );
-splide.mount();
+  splide.mount();
+  
+  var splide2 = new Splide( '#splidepaket', {
+    perPage: 1,
+    focus  : 0,
+    omitEnd: true,
+    } );
+  splide2.mount();
 
 } );
