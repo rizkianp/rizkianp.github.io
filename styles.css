@@ -438,4 +438,15 @@ hr {
         max-width: 20vw;
     }
 
+    #splidetestimoni {
+        width: 68vw;
+        margin: auto;
+    }
+
+    #img_testi {
+        max-width: 64vw;
+        border-radius: 12px;
+        margin: 5px;
+    }
+
 }
