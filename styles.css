@@ -326,6 +326,22 @@ hr {
     font-size: small;
 }
 
+#img_testi {
+    max-width: 34vw;
+    border-radius: 12px;
+    margin: 20px;
+}
+
+.splide__pagination {
+    counter-reset: pagination-num;
+  }
+
+#testitrack {
+    cursor: pointer;
+    margin: 6px;
+}
+
+
 @media only screen and (max-width: 600px) {
 
     body {
