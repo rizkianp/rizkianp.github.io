@@ -327,9 +327,9 @@ hr {
 }
 
 #img_testi {
-    max-width: 28vw;
+    max-width: 25vw;
     border-radius: 12px;
-    margin: 20px;
+    margin: 10px;
 }
 
 .splide__pagination {
@@ -342,7 +342,7 @@ hr {
 }
 
 #splidetestimoni {
-    width: 60vw;
+    width: 54vw;
     margin: auto;
 }
 
